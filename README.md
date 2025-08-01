@@ -44,19 +44,9 @@ cd the-creator
 
 ### 2.3 Open the project in a browser
 
-You can either:
-
-- Double-click `index.html`
-
-or
+You can run command:
 
 - npx http-server public
-
-or
-
-- Use a local development server (recommended for dynamic loading)
-
-Then open `http://localhost:8000` in your browser.
 
 **Option: Use Live Server in VS Code**
 
