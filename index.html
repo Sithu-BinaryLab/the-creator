@@ -1,9 +1,395 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>The Creator</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="public/assets/header/logo.svg"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="./src/css/input.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="header-container"></div>
+    <!-- Hero Start -->
+    <section class="home">
+      <div data-aos="fade-up" class="left-home">
+        <img class="left-line" src="public/assets/brand/Line1.svg" alt="icon" />
+        <img class="left-hand" src="public/assets/brand/hands.svg" alt="icon" />
+        <img class="bulb" src="public/assets/brand/bulb.svg" alt="icon" />
+        <img
+          class="facebook"
+          src="public/assets/brand/facebook.svg"
+          alt="icon"
+        />
+        <img
+          class="instagram"
+          src="public/assets/brand/instagram.svg"
+          alt="icon"
+        />
+      </div>
+      <div class="main-home">
+        <h1 data-aos="zoom-in">
+          Spark your brand's<span class="highlight">imaginative</span>flair with
+          us
+        </h1>
+        <p class="subtext">
+          Our team combines strategy, design, and technology to breathe life
+          into your brand. Collaborate with us to leave a lasting impression on
+          your audience.
+        </p>
+        <div class="email-box">
+          <input type="email" placeholder="Enter your Email" />
+          <button>Join</button>
+        </div>
+      </div>
+      <div data-aos="fade-up" class="right-home">
+        <img
+          class="right-line"
+          src="public/assets/brand/Line_2.svg"
+          alt="icon"
+        />
+        <img
+          class="right-hand"
+          src="public/assets/brand/hands_2.svg"
+          alt="icon"
+        />
+        <img class="bulb" src="public/assets/brand/bulb2.svg" alt="icon" />
+        <img
+          class="facebook"
+          src="public/assets/brand/facebook2.svg"
+          alt="icon"
+        />
+        <img class="youtube" src="public/assets/brand/youtube.svg" alt="icon" />
+      </div>
+    </section>
+    <!-- Hero End -->
+    <!-- Partners Start -->
+    <section id="partners" class="partner-section">
+      <img
+        src="/public/assets/partners/vector.svg"
+        class="partner-bg-curve"
+        alt="curve background"
+      />
+      <div class="partner-header">
+        <h2 data-aos="zoom-in-up">
+          Contact us today to explore partnership
+          <span class="highlight-underline">opportunities!</span>
+        </h2>
+      </div>
+      <div class="partner-card-container">
+        <div class="partner-card-main">
+          <div class="partner-card-left">
+            <h3>Partners:</h3>
+            <p class="text-sm">
+              Our creative agency forms strong partnerships with diverse
+              businesses, from startups to global brands, based on trust,
+              respect, and a shared vision for success.
+            </p>
+          </div>
+          <div class="partner-card-right">
+            <div class="info-card twitter">
+              <div class="info-card-header">
+                <div class="info-card-icon">
+                  <img
+                    src="/public/assets/partners/twitter.svg"
+                    alt="Twitter"
+                  />
+                </div>
+                <div class="info-card-years">2008 — TODAY</div>
+              </div>
+              <div class="info-card-desc text-sm">
+                Provides communication between the agency and brands. Collects
+                customer feedback and encourages discussion about the product,
+                which helps improve it.
+              </div>
+            </div>
+            <div data-aos="zoom-in-left" class="info-card pinterest">
+              <div class="info-card-header">
+                <div class="info-card-icon">
+                  <img
+                    src="/public/assets/partners/pinterest.svg"
+                    alt="Pinterest"
+                  />
+                </div>
+                <div class="info-card-years">2010 — TODAY</div>
+              </div>
+              <div class="info-card-desc text-sm">
+                Provide unlimited access to an boards. Provides communicat and
+                creative partnership. Prov participation in creative confer
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Partners End -->
+    <!-- Challenge Start -->
+    <section class="challenge-section">
+      <div class="challenge-container">
+        <h2 data-aos="zoom-in-up" class="challenge-title">
+          Making it big on any Platform is tougher than you think
+        </h2>
+        <div data-aos="zoom-in" class="woman-figure">
+          <img
+            src="/public/assets/challenge/Illustration1.svg"
+            alt="Woman with shocked expression"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Challenge End -->
+    <!-- We Do it Start -->
+    <div id="we-do-it">
+      <div class="we-do-it">
+        <img
+          data-aos="fade-down"
+          class="left-line"
+          src="/public/assets/we-do-it/curve1.svg"
+          alt="line"
+        />
+        <img
+          data-aos="fade-down"
+          class="left-hand"
+          src="/public/assets/we-do-it/hands3.svg"
+          alt="left hand"
+        />
+        <img
+          data-aos="fade-down"
+          class="like-bubble"
+          src="/public/assets/we-do-it/like.svg"
+          alt="Like heart"
+        />
+        <div class="main-we-do-it">
+          <h2 data-aos="zoom-in-up" class="we-do-it-title">
+            We do it for you. No more struggling to grow on any Platform
+          </h2>
+          <p class="we-do-it-paragraph">
+            Work with our expert strategists writers, editors, and producers to
+            create content that transforms your content
+          </p>
+          <p class="we-do-it-paragraph-small">
+            No managing a team of freelancers or spending countless hours trying
+            to master all the skillsets Platform requires - all you need is The
+            Creator
+          </p>
+        </div>
+        <div data-aos="fade-up" class="right-we-do-it">
+          <img
+            data-aos="fade-down"
+            class="right-line"
+            src="/public/assets/we-do-it/curve2.svg"
+            alt="line"
+          />
+          <img
+            data-aos="fade-down"
+            class="right-hand"
+            src="/public/assets/we-do-it/hands4.svg"
+            alt="right hand"
+          />
+          <img
+            data-aos="fade-down"
+            class="right-bubble"
+            src="/public/assets/we-do-it/like2.svg"
+            alt="Like heart"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- We Do it End -->
+    <!-- Process Start -->
+    <div id="process">
+      <div class="process-section">
+        <div class="process-step step-1">
+          <div class="step-content">
+            <div class="step-text">
+              <h3>1# Research & Analysis</h3>
+              <p>
+                Our agency's research-driven approach involves gathering
+                insights into our clients' industries, competitors, and target
+                audiences to develop tailored strategies that deliver
+                exceptional results. This deep understanding allows us to create
+                innovative and effective campaigns that resonate with our
+                clients' audiences.
+              </p>
+            </div>
+            <img
+              data-aos="zoom-in-left"
+              class="step-image right-image"
+              src="public/assets/process/Illustration.svg"
+              alt="Woman with magnifying glass"
+            />
+          </div>
+        </div>
+
+        <div class="process-step step-2">
+          <div class="step-content">
+            <img
+              data-aos="zoom-in-right"
+              class="step-image left-image"
+              src="public/assets/process/Illustration2.svg"
+              alt="Woman with laptop"
+            />
+            <div class="step-text step-2-content">
+              <h3>2# Concept development</h3>
+              <p>
+                Based on the brief and research, the agency's creative team
+                generates ideas for the campaign. These concepts are presented
+                to the client for feedback and refinement.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-step step-3">
+          <div class="step-content">
+            <div class="step-text">
+              <h3>3# Design and execution</h3>
+              <p>
+                Once the concept is approved, the agency's designers and
+                developers bring it to life. This includes creating visual
+                assets, writing copy, and developing multimedia content.
+              </p>
+            </div>
+            <img
+              data-aos="zoom-in-left"
+              class="step-image right-image"
+              src="public/assets/process/Illustration3.svg"
+              alt="Woman with tablet"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Process End -->
+    <!-- Testimonial Start -->
+    <div id="testimonials" class="testimonial-section">
+      <div class="testimonial-container">
+        <p
+          class="testimonial-text-center testimonial-text-gray-600 testimonial-mb-8"
+        >
+          Hear from our customers from Top YouTube Channel
+        </p>
+        <div data-aos="zoom-in-right" id="creators" class="testimonial-mb-12">
+          <h1 class="testimonial-heading-primary">
+            We've taught&nbsp;
+            <img
+              alt="Creator avatar"
+              class="testimonial-avatar-inline"
+              src="/public/assets/creators/creator1.svg"
+            />
+            over 3,000 creators<br />
+            how to&nbsp;<span>
+              <img
+                alt="Creator avatar"
+                class="testimonial-avatar-inline"
+                src="/public/assets/creators/creator2.svg"
+              />
+              <span class="testimonial-highlight">grow on any Platform</span>
+              <img
+                alt="Creator avatar"
+                class="testimonial-avatar-inline"
+                src="/public/assets/creators/creator3.svg"
+              />
+            </span>
+          </h1>
+          <h2 class="testimonial-heading-secondary">
+            Now <span class="testimonial-highlight-text">we can do</span> it for
+            you
+          </h2>
+        </div>
+        <div
+          class="testimonial-flex testimonial-justify-between testimonial-items-end testimonial-mb-8"
+        >
+          <h3 class="testimonial-heading-tertiary">
+            See what our famous clients <br />
+            write about us:
+          </h3>
+          <div
+            class="testimonial-flex testimonial-items-center testimonial-space-x-2"
+          >
+            <button
+              data-aos="fade-right"
+              class="testimonial-button"
+              onclick="moveCarousel(-1)"
+            >
+              <img src="/public/assets/creators/leftArrow.svg" />
+            </button>
+            <button
+              data-aos="fade-left"
+              class="testimonial-button testimonial-button-pink"
+              onclick="moveCarousel(1)"
+            >
+              <img src="/public/assets/creators/rightArrow.svg" />
+            </button>
+          </div>
+        </div>
+        <div class="testimonial-carousel-container">
+          <div class="testimonial-carousel" id="carousel">
+            <div class="testimonial-card testimonial-card-1">
+              <div class="testimonial testimonial-card-flex testimonial-mb-4">
+                <img
+                  alt="John Li"
+                  class="testimonial-avatar"
+                  src="/public/assets/creators/profile1.svg"
+                />
+                <h4>John Li</h4>
+              </div>
+              <p class="creator-card-about">
+                The Creator agency transformed our approach with innovative
+                ideas and strategic thinking. Their expertise in the creative
+                industry delivered outstanding results beyond our expectations.
+              </p>
+            </div>
+            <div class="testimonial-card testimonial-card-2">
+              <div class="testimonial testimonial-card-flex testimonial-mb-4">
+                <img
+                  alt="Amanda Steen"
+                  class="testimonial-avatar"
+                  src="/public/assets/creators/profile2.svg"
+                />
+                <h4>Amanda Steen</h4>
+              </div>
+              <p class="creator-card-about">
+                The Creator agency transformed our approach with innovative
+                ideas and strategic thinking. Their expertise in the creative
+                industry delivered outstanding results beyond our expectations.
+              </p>
+            </div>
+            <div class="testimonial-card testimonial-card-3">
+              <div class="testimonial testimonial-card-flex testimonial-mb-4">
+                <img
+                  alt="Nicholas Love"
+                  class="testimonial-avatar"
+                  src="/public/assets/creators/profile3.svg"
+                />
+                <h4>Nicholas Love</h4>
+              </div>
+              <p class="creator-card-about">
+                The Creator agency transformed our approach with innovative
+                ideas and strategic thinking. Their expertise in the creative
+                industry delivered outstanding results beyond our expectations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End -->
+    <div id="footer-container"></div>
+    <!-- For animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+        once: true,
+        offset: 100,
+      });
+    </script>
+    <script src="./src/js/main.js"></script>
+  </body>
 </html>
