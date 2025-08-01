@@ -66,7 +66,7 @@ function carousel() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  loadComponent("#header-container", "./src/components/header.html");
-  loadComponent("#footer-container", "./src/components/footer.html");
+  loadComponent("#header-container", "/components/header.html");
+  loadComponent("#footer-container", "/components/footer.html");
   carousel();
 });

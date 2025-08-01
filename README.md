@@ -14,18 +14,18 @@ This is a project built with **HTML**, **CSS**, **JavaScript**, and the **AOS (A
 ```
 project-root/
 ├── public/
-│   └── assets/
-│       └── images/
-├── src/
+│   ├── index.html
 │   ├── components/
 │   │   ├── header.html
 │   │   └── footer.html
+│   ├── js/
+│   │   └── main.js
 │   ├── css/
 │   │   └── input.css
-│   └── js/
-│       └── main.js
-├── index.html
+│   └── assets/
+│       └── images/
 └── README.md
+
 ```
 
 ## 🚀 2. Getting Started
@@ -47,6 +47,10 @@ cd the-creator
 You can either:
 
 - Double-click `index.html`
+
+or
+
+- npx http-server public
 
 or
 
