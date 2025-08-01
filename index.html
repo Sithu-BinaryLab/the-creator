@@ -12,13 +12,12 @@
     />
     <link rel="stylesheet" href="./src/css/input.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="./src/js/main.js"></script>
   </head>
   <body>
     <div id="header-container"></div>
     <!-- Hero Start -->
     <section class="home">
-      <div class="left-home">
+      <div data-aos="fade-up" class="left-home">
         <img class="left-line" src="public/assets/brand/Line1.svg" alt="icon" />
         <img class="left-hand" src="public/assets/brand/hands.svg" alt="icon" />
         <img class="bulb" src="public/assets/brand/bulb.svg" alt="icon" />
@@ -34,7 +33,7 @@
         />
       </div>
       <div class="main-home">
-        <h1>
+        <h1 data-aos="zoom-in">
           Spark your brand's<span class="highlight">imaginative</span>flair with
           us
         </h1>
@@ -48,7 +47,7 @@
           <button>Join</button>
         </div>
       </div>
-      <div class="right-home">
+      <div data-aos="fade-up" class="right-home">
         <img
           class="right-line"
           src="public/assets/brand/Line_2.svg"
@@ -77,7 +76,7 @@
         alt="curve background"
       />
       <div class="partner-header">
-        <h2>
+        <h2 data-aos="zoom-in-up">
           Contact us today to explore partnership
           <span class="highlight-underline">opportunities!</span>
         </h2>
@@ -109,7 +108,7 @@
                 which helps improve it.
               </div>
             </div>
-            <div class="info-card pinterest">
+            <div data-aos="zoom-in-left" class="info-card pinterest">
               <div class="info-card-header">
                 <div class="info-card-icon">
                   <img
@@ -132,10 +131,10 @@
     <!-- Challenge Start -->
     <section class="challenge-section">
       <div class="challenge-container">
-        <h2 class="challenge-title">
+        <h2 data-aos="zoom-in-up" class="challenge-title">
           Making it big on any Platform is tougher than you think
         </h2>
-        <div class="woman-figure">
+        <div data-aos="zoom-in" class="woman-figure">
           <img
             src="/public/assets/challenge/Illustration1.svg"
             alt="Woman with shocked expression"
@@ -148,22 +147,25 @@
     <div id="we-do-it">
       <div class="we-do-it">
         <img
+          data-aos="fade-down"
           class="left-line"
           src="/public/assets/we-do-it/curve1.svg"
           alt="line"
         />
         <img
+          data-aos="fade-down"
           class="left-hand"
           src="/public/assets/we-do-it/hands3.svg"
           alt="left hand"
         />
         <img
+          data-aos="fade-down"
           class="like-bubble"
           src="/public/assets/we-do-it/like.svg"
           alt="Like heart"
         />
         <div class="main-we-do-it">
-          <h2 class="we-do-it-title">
+          <h2 data-aos="zoom-in-up" class="we-do-it-title">
             We do it for you. No more struggling to grow on any Platform
           </h2>
           <p class="we-do-it-paragraph">
@@ -176,18 +178,21 @@
             Creator
           </p>
         </div>
-        <div class="right-we-do-it">
+        <div data-aos="fade-up" class="right-we-do-it">
           <img
+            data-aos="fade-down"
             class="right-line"
             src="/public/assets/we-do-it/curve2.svg"
             alt="line"
           />
           <img
+            data-aos="fade-down"
             class="right-hand"
             src="/public/assets/we-do-it/hands4.svg"
             alt="right hand"
           />
           <img
+            data-aos="fade-down"
             class="right-bubble"
             src="/public/assets/we-do-it/like2.svg"
             alt="Like heart"
@@ -213,6 +218,7 @@
               </p>
             </div>
             <img
+              data-aos="zoom-in-left"
               class="step-image right-image"
               src="public/assets/process/Illustration.svg"
               alt="Woman with magnifying glass"
@@ -223,6 +229,7 @@
         <div class="process-step step-2">
           <div class="step-content">
             <img
+              data-aos="zoom-in-right"
               class="step-image left-image"
               src="public/assets/process/Illustration2.svg"
               alt="Woman with laptop"
@@ -249,6 +256,7 @@
               </p>
             </div>
             <img
+              data-aos="zoom-in-left"
               class="step-image right-image"
               src="public/assets/process/Illustration3.svg"
               alt="Woman with tablet"
@@ -266,7 +274,7 @@
         >
           Hear from our customers from Top YouTube Channel
         </p>
-        <div id="creators" class="testimonial-mb-12">
+        <div data-aos="zoom-in-right" id="creators" class="testimonial-mb-12">
           <h1 class="testimonial-heading-primary">
             We've taught&nbsp;
             <img
@@ -304,10 +312,15 @@
           <div
             class="testimonial-flex testimonial-items-center testimonial-space-x-2"
           >
-            <button class="testimonial-button" onclick="moveCarousel(-1)">
+            <button
+              data-aos="fade-right"
+              class="testimonial-button"
+              onclick="moveCarousel(-1)"
+            >
               <img src="/public/assets/creators/leftArrow.svg" />
             </button>
             <button
+              data-aos="fade-left"
               class="testimonial-button testimonial-button-pink"
               onclick="moveCarousel(1)"
             >
@@ -368,5 +381,15 @@
     </div>
     <!-- Testimonial End -->
     <div id="footer-container"></div>
+    <!-- For animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+        once: true,
+        offset: 100,
+      });
+    </script>
+    <script src="./src/js/main.js"></script>
   </body>
 </html>

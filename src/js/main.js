@@ -15,6 +15,7 @@ function attachMenuToggle() {
   const hamburger = document.getElementById("hamburger");
   const nav = document.getElementById("nav-links");
   const closeBtn = document.getElementById("close-btn");
+  const menuLinks = nav.querySelectorAll("a");
 
   function toggleMenu() {
     nav.classList.toggle("active");
@@ -22,6 +23,9 @@ function attachMenuToggle() {
 
   hamburger?.addEventListener("click", toggleMenu);
   closeBtn?.addEventListener("click", toggleMenu);
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", toggleMenu);
+  });
 }
 
 function carousel() {
