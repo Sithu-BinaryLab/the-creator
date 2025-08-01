@@ -46,12 +46,9 @@ cd the-creator
 
 You can run command:
 
+```bash
 - npx http-server public
-
-**Option: Use Live Server in VS Code**
-
-- Install the "Live Server" extension
-- Right-click `index.html` → Open with Live Server
+```
 
 ## 📦 3. External Libraries Used
 
