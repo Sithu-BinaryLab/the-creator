@@ -47,7 +47,7 @@ cd the-creator
 You can run command:
 
 ```bash
-- npx http-server public
+npx http-server public
 ```
 
 ## 📦 3. External Libraries Used
