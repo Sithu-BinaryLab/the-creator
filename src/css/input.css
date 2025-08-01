@@ -164,7 +164,7 @@ html {
   color: #ff79c6;
 }
 
-/* Brand section */
+/* Hero Section */
 
 #home {
   width: 100%;
@@ -269,7 +269,7 @@ html {
   height: 70px;
   background-size: contain;
   z-index: 999;
-  background: url("/public/assets/Line.svg") no-repeat center/cover;
+  background: url("/public/assets/brand/Line.svg") no-repeat center/cover;
   z-index: -1;
 }
 
@@ -462,5 +462,245 @@ html {
   }
   .right-home .facebook {
     right: 40px;
+  }
+}
+
+/* Partners Section */
+.partner-section {
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+  background: #fffaf6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 0 0;
+  z-index: 1;
+  row-gap: 20px;
+  height: 100%;
+}
+
+.partner-bg-curve {
+  position: absolute;
+  left: 0;
+  width: 40%;
+  height: 450px;
+  z-index: 0;
+  pointer-events: none;
+}
+.partner-bg-curve img {
+  width: 350px;
+  opacity: 0.5;
+  user-select: none;
+}
+
+.partner-bg-curve {
+  position: absolute;
+  left: 0;
+  width: 40%;
+  height: 450px;
+  z-index: 0;
+  pointer-events: none;
+}
+.partner-bg-curve img {
+  width: 350px;
+  opacity: 0.5;
+  user-select: none;
+}
+.partner-header {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 32px;
+  text-align: center;
+  width: 60%;
+}
+.partner-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #20412c;
+  line-height: 48px;
+  margin-bottom: 0;
+}
+.highlight-underline {
+  color: #20412c;
+
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+.highlight-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 2.15rem;
+  height: 20px;
+  background: url("../../public/assets/partners/vector2.svg") no-repeat
+    center/cover;
+  border-radius: 8px;
+  width: 100%;
+  z-index: -1;
+}
+.partner-card-container {
+  width: 85%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 2;
+}
+.partner-card-main {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  align-content: stretch;
+  width: 100%;
+  min-height: 220px;
+  padding: 40px 0 40px 30px;
+  gap: 24px;
+}
+.partner-card-left {
+  flex: 1 1 200px;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.partner-card-left h3 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #20412c;
+  line-height: 100%;
+}
+.partner-card-left p {
+  font-size: 1rem;
+  color: #20412c;
+  line-height: 1.6;
+}
+.partner-card-right {
+  flex: 2 1 0;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: stretch;
+  padding: 0 40px 0 0;
+}
+.info-card {
+  background: #ff4fd8;
+  border-radius: 16px;
+  padding: 24px 20px 20px 20px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 2px 12px 0 rgba(255, 79, 216, 0.08);
+  position: relative;
+  z-index: 1;
+}
+.info-card-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 8px;
+}
+.info-card-icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+.info-card-years {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  line-height: 30px;
+}
+.info-card-desc {
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+/* Pinterest icon override if needed */
+.info-card.pinterest {
+  background: #ffb3e6;
+  color: #20412c;
+  position: absolute;
+  right: -100px;
+}
+.info-card.pinterest .info-card-years,
+.info-card.pinterest .info-card-desc {
+  color: #20412c;
+}
+.info-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.text-sm {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+/* Responsive adjustments */
+@media (min-width: 1536px) {
+  .info-card.pinterest {
+    right: 220px;
+    height: 220px;
+  }
+  .partner-card-main {
+    padding-right: 360px;
+    box-sizing: content-box;
+  }
+}
+@media (max-width: 900px) {
+  .partner-card-main {
+    flex-direction: column;
+    padding: 16px 0;
+    gap: 16px;
+  }
+  .partner-card-left,
+  .partner-card-right {
+    padding: 0 24px;
+  }
+  .partner-card-right {
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .partner-header {
+    width: 90%;
+  }
+  .partner-header h2 {
+    font-size: 1.9rem;
+  }
+  .partner-card-container {
+    width: 92%;
+  }
+  .partner-card-main {
+    padding: 16px 10px;
+    padding-bottom: 230px;
+  }
+  .partner-card-left,
+  .partner-card-right {
+    padding: 0 10px;
+  }
+  .info-card {
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  .info-card.pinterest {
+    bottom: 30px;
+    left: 40px;
+    width: inherit;
+    right: 40px;
+  }
+  .partner-card-left h3 {
+    font-size: 1.7rem;
   }
 }
