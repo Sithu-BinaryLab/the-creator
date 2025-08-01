@@ -9,7 +9,7 @@ body {
   font-family: "Inter", sans-serif;
   background: #fffaf6;
   color: #103321;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   width: 100%;
   display: flex;
   flex-direction: column;
